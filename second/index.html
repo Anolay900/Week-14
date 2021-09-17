@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цвета</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="shortcut icon" type="image/svg" href="../assets/images/color-wheel.svg">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Div</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Карусель</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <input type="image" name="image" class="arrows" src="../assets/images/left-arrow.png"
+                onclick="imgChange()"></input>
+            <img src="../assets/images/gallery/img1.jfif" alt="" class="gallery__img" id="imageChange">
+            <input type="image" name="image" class="arrows" src="../assets/images/right-arrow.png"
+                onclick="imgChange()"></input>
+        </div>
+    </main>
+    <script src="../assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
