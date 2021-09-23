@@ -57,3 +57,22 @@ function imgChange() {
         n += 1
     }
 }
+
+function changeTheme() {
+    switch (document.getElementById('theme').value)
+    {case "blue": 
+    document.getElementById('themeColor').style.background = 'rgb(202, 234, 255)';
+    document.getElementById('navColor').style.background = 'white';
+    document.getElementById('textColor').style.color = 'rgb(18, 131, 206)'; break;
+
+    case "white":
+    document.getElementById('themeColor').style.background = 'rgb(242, 247, 248)';
+    document.getElementById('navColor').style.background = 'white';
+    document.getElementById('textColor').style.color = 'rgb(18, 131, 206)'; break;
+
+    case "black":
+        document.getElementById('themeColor').style.background = 'rgb(27, 39, 44)';
+        document.getElementById('navColor').style.background = 'rgb(42, 66, 77)';
+        document.getElementById('textColor').style.color = 'white'; break;
+    }
+}
