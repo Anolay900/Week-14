@@ -27,25 +27,34 @@
                     </select>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link textColor" href="../third/index.html">Регистрация</a>
+                    <a class="nav-link active" href="../third/index.html">Регистрация</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link textColor" href="../index.html" id="textColor">Div</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Карусель</a>
+                    <a class="nav-link textColor" href="../second/index.html">Карусель</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="gallery">
-            <input type="image" name="image" class="arrows" alt=" " src="../assets/images/left-arrow.png"
-                onclick="imgChange()">
-            <img src="../assets/images/gallery/img1.jfif" alt="" class="gallery__img" id="imageChange">
-            <input type="image" name="image" class="arrows" alt=" " src="../assets/images/right-arrow.png"
-                onclick="imgChange()">
+        <div>
+            <form class="record">
+                <h3 class="record__text">Регистрация</h3>
+                <div id="helloLogin"></div>
+                <input class="record__input" type="text" placeholder="Логин" id="name">
+                <input class="record__input" type="email" placeholder="Email" id="mail">
+                <input class="record__input" type="tel" placeholder="Телефон" id="tel">
+                <input class="record__input" type="password" placeholder="Пароль" id="password">
+                <div id="security"></div>
+                <input class="record__input" type="password" placeholder="Повторите пароль" id="repeat">
+                <div id="correct"></div>
+                <div id="error"></div>
+                <button type="button" class="btn btn-info record__btn" onclick="data()">Зарегистрироваться</button>
+            </form>
         </div>
+
     </main>
     <script src="../assets/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
