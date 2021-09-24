@@ -61,7 +61,6 @@ nav {
 
 .record {
     display: flex;
-    height: 90vh;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -86,7 +85,7 @@ nav {
 
 .record__text {
     align-self: center;
-    margin-bottom: 10%;
+    margin-top: 10%;
     color: rgb(50, 75, 82);
 }
 
@@ -109,13 +108,12 @@ nav {
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
     .record {
-        height: 90vh;
         margin: 5% 25%;
         max-width: 100%;
     }
 
     .record__text {
-        margin-bottom: 10%;
+        margin-top: 10%;
         font-size: 3.5vh;
     }
 }
@@ -123,26 +121,24 @@ nav {
 
 @media screen and (min-width: 480px) and (max-width: 759px) {
     .record {
-        height: 90vh;
         margin: 5% 15%;
         max-width: 100%;
     }
 
     .record__text {
-        margin-bottom: 15%;
+        margin-top: 15%;
         font-size: 3vh;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .record {
-        height: 90vh;
         margin: 5% 15%;
         max-width: 100%;
     }
 
     .record__text {
-        margin-bottom: 5%;
+        margin-top: 5%;
         font-size: 3vh;
     }
 }
