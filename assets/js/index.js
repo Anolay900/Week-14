@@ -83,7 +83,6 @@ function changeTheme() {
 function data() {
 
     document.getElementById('error').innerHTML = "";
-    document.getElementById('security').innerHTML = "";
     document.getElementById('correct').innerHTML = "";
     document.getElementById('helloLogin').innerHTML = "";
     document.getElementById('mail').style.border = 'none';
@@ -154,18 +153,23 @@ function data() {
         document.getElementById('correct').style.color = 'green';
     }
     
+}
 
+function cheackPass() {
+    document.getElementById('security').innerHTML = "";
+    let inputPassword = document.getElementById('password');
     if (inputPassword.value.length <= 5){
-        document.getElementById('security').style.color = 'red'
+        document.getElementById('security').style.color = 'red';
         document.getElementById('security').innerHTML += 'Пароль слишком короткий<br>';
     }
     else if (inputPassword.value.length <= 7 && inputPassword.value.length > 5) {
-        document.getElementById('security').style.color = '#ffba00'
+        document.getElementById('security').style.color = '#ffba00';
         document.getElementById('security').innerHTML += 'Пароль слишком короткий<br>';
     }
     else if (inputPassword.value.length > 7) {
-        document.getElementById('security').style.color = 'green'
+        document.getElementById('security').style.color = 'green';
         document.getElementById('security').innerHTML += 'Надежный пароль<br>';
     }
-
 }
+
+password.addEventListener('keyup', cheackPass);
