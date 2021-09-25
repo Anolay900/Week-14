@@ -173,3 +173,4 @@ function cheackPass() {
 }
 
 password.addEventListener('keyup', cheackPass);
+formCheack.addEventListener('click', data);
